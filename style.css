@@ -23,6 +23,7 @@ body {
   height: 400px;
   width: 400px;
   border: 10px solid white;
+  padding: 10px;
 }
 
 .grid-items {
