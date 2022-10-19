@@ -4,4 +4,92 @@
 
 html {
   font-size: 10px;
+  font-weight: 600;
+}
+body {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 400px;
+  width: 400px;
+}
+
+.grid-items {
+  border: 0.1rem solid black;
+  font-size: 2rem;
+  background-color: white;
+}
+
+#box1,
+#box3,
+#box5,
+#box7,
+#box9,
+#box10,
+#box11,
+#box12,
+#box13,
+#box15 {
+  border-left: 0.7rem solid black;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+/* #box5,
+#box8, */
+#box9,
+#box10,
+#box11, #box13, #box14, #box15, #box16 {
+  border-bottom: 0.7rem solid black;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box9,
+#box12 {
+  border-top: 0.7rem solid black;
+}
+
+#box4,
+#box8,
+#box12,
+#box16 {
+  border-right: 0.7rem solid black;
+}
+
+.prompt {
+  position: relative;
+  top: 0%;
+  left: 5%;
+}
+
+.answer {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+.special {
+  border: none;
+  font-size: 2rem;
+}
+
+@media (min-width: 475px) {
+  html {
+    font-size: 16px;
+  }
 }
